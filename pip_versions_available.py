@@ -32,7 +32,6 @@ def print_available_versions(package_name, output, json_format=False):
         payload = {'package': package_name, 'versions': versions}
         json.dump(payload, output, indent=2)
     else:
-        output.write('{}\n'.format(package_name))
         for version in versions:
             output.write('{}\n'.format(version))
 
