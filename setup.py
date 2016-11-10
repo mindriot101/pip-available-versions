@@ -1,6 +1,7 @@
 from setuptools import setup
 
 setup(
+    version='0.0.1',
     py_modules=['pip_versions_available'],
     name='pip_versions_available',
     author='Simon Walker',
