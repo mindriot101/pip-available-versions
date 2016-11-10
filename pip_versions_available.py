@@ -50,7 +50,15 @@ def main(args):
 
 def __main__():
     # type: () -> None
-    parser = argparse.ArgumentParser()
+    description = '''
+    Fetch available versions of a package from pypi
+    '''
+
+    epilog = '''
+    Output can either be a single list, or json format, to stdout (by default),
+    or a file
+    '''
+    parser = argparse.ArgumentParser(description=description, epilog=epilog)
     parser.add_argument('package', nargs='+')
     parser.add_argument('-o', '--output', type=argparse.FileType(mode='w'),
                         default='-',
