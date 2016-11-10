@@ -12,7 +12,7 @@ except ImportError:
     pass
 
 logging.basicConfig(
-    level=logging.INFO, format='%(asctime)s : %(message)s')
+    level=logging.WARNING, format='%(asctime)s : %(message)s')
 logger = logging.getLogger(__name__)
 
 
